@@ -25,6 +25,7 @@ public class TypesEquipmentsController {
 
 		private Logger logger = LoggerFactory.getLogger(TypesEquipmentsController.class);
 		
+		@SuppressWarnings("unused")
 		@Autowired
 		private EquipmentService equipmentService;
 		

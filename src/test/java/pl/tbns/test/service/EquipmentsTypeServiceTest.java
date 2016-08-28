@@ -22,7 +22,7 @@ import pl.tbns.service.EquipmentsTypeService;
  */
 //@Ignore
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {  "/spring/spring-application-context.xml", "/spring/store/spring-data-dev.xml" })
+@ContextConfiguration(locations = { "/spring/spring-application-context-test.xml", "/spring/store/spring-data-dev.xml" })
 public class EquipmentsTypeServiceTest extends TestCase{
 
 	@Autowired

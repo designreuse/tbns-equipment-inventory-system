@@ -24,8 +24,9 @@ import pl.tbns.service.UserService;
 
 
 //@Ignore
+@SuppressWarnings("unused")
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "/spring/spring-application-context.xml", "/spring/store/spring-data-prod.xml" })
+@ContextConfiguration(locations = { "/spring/spring-application-context-test.xml", "/spring/store/spring-data-dev.xml" })
 public class CreateUserAndRoleTest extends TestCase{
 
 	@Autowired
@@ -46,8 +47,8 @@ public class CreateUserAndRoleTest extends TestCase{
 		User user = userDao.findByName("admin");
 		
 		user.setName("TEST");
-		user.setEmail("maciej.skowyra.pl");
-		user.setPassword("password");
+		user.setEmail("szymon@iwanski.pl");
+		user.setPassword("test1234");
 		userService.createUser(user);
 		
 	//	assertEquals("TEST", userDao.findByName("admin").getName().toString());
@@ -62,12 +63,12 @@ public class CreateUserAndRoleTest extends TestCase{
 				
 		User userUser = new User();
        
-        userUser.setName("user2");
-        userUser.setPassword("user");            
+        userUser.setName("user");
+        userUser.setPassword("test4321");            
         userService.createUser(userUser);
 		
 	//	assertEquals("TEST", userDao.findByName("admin").getName().toString());
-		assertSame(userUser, userDao.findByName("user2"));
+		assertSame(userUser, userDao.findByName("user"));
 	
 	}
 	

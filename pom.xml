@@ -205,4 +205,8 @@
             </plugin>
         </plugins>
     </build>
+    <organization>
+    	<name>TECHNOBUD Nowy Sącz</name>
+    	<url>http://www.tbns.com.pl</url>
+    </organization>
 </project>

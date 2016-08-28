@@ -26,7 +26,7 @@ import pl.tbns.service.TransmissionHistoryService;
  */
 @Ignore
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "/spring/application-context-test.xml", "/spring/hibernate-context-test.xml" })
+@ContextConfiguration(locations = { "/spring/spring-application-context-test.xml", "/spring/store/spring-data-dev.xml" })
 public class TransmissionHistoryTest extends TestCase{
 	
 	@Autowired

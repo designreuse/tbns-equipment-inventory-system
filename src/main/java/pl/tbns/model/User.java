@@ -29,6 +29,7 @@ import org.hibernate.validator.constraints.Email;
  * @date Aug 22, 2015 3:05:20 PM
  * 
  */
+@SuppressWarnings("unused")
 @Entity
 public class User  {
 

@@ -27,6 +27,7 @@ public class MagazineController {
 	
 	@Autowired
 	private MagazineService magazineService;	
+	@SuppressWarnings("unused")
 	@Autowired
 	private EquipmentService equipmentService;
 	@Autowired
